@@ -13,7 +13,7 @@ describe('async actions', () => {
     })
 
     it('creates FETCH_MOVIE_LIST when fetching movie has been done', () => {
-        fetchMock.getOnce('http://www.omdbapi.com/?apikey=b9bd48a6&s=2042&type=movie', {
+        fetchMock.getOnce('http://www.omdbapi.com/?apikey=b9bd48a6&s=2042&page=1', {
             body: { payload: {} },
             headers: { 'content-type': 'application/json' }
         })
