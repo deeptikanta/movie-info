@@ -1,6 +1,6 @@
 
 export const fetchMovieList = (apiKey, movieName) => (dispatch) => {
-      return fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}&&page=1`)
+      return fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${movieName}&page=1`)
             .then(response => response.json())
             .then(json => {
                   if (json.Response === 'False') {
